@@ -1,4 +1,5 @@
-import csvfrom selenium import webdriver
+import csv
+from selenium import webdriver
 from selenium.common import NoSuchElementException
 from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
