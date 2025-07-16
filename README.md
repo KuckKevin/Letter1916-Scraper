@@ -1,4 +1,4 @@
-GOALS and BASICS
+GOALS AND BASICS
 
 
 The goal of this little Python program is to make it faster to search through the collection of letters about the 1916 Easter Rising in Dublin, collected in the citizens science project “Letters 1916-1923.” For this goal, it is using the Selenium library, which simulates a human’s interaction with any given website. It can for example click on links and boxes on the site or write into a search bar. In a last step, the titles of and links to the letters found in the search are getting written into a CSV-file. This makes possible searching for a number of keywords automatically without having to copy every link by hand and provides a file with which one can work further.
