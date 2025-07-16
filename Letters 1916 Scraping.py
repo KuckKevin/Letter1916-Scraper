@@ -4,8 +4,8 @@ from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 import time
 
-keyword = "Casement"
-csv_name = "letters1916_casement_results.csv"
+keyword = "Casement" # The keyword is changable to whatever you want
+csv_name = "letters1916_casement_results.csv" # Note that the keyword is part of the file name
 all_links = []
 all_titles = []
 page_number = 1
@@ -38,7 +38,7 @@ def turn_page(): # Turns the page of the "Letter"-body on the website
     pages = page_browser.find_elements(By.CSS_SELECTOR, "li")
     for page in pages:
         if page.text == str(page_number+1):
-            print(f"Seite {page.text} gefunden.")
+            print(f"Page {page.text} found.")
             page.find_element(By.CSS_SELECTOR, "span").click()
             print(f"Turning to page number {page_number + 1}.")
 def turn_page_three_to_four(): # This is necessary because the page-browser shortens on when page 4 is loaded from 10 to 8 units.
