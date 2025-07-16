@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 import time
 
 keyword = "Casement" # The keyword is changable to whatever you want
-csv_name = "letters1916_casement_results.csv" # Note that the keyword is part of the file name
+csv_name = f"letters1916_{keyword}_results.csv" # Note that the keyword is part of the file name
 all_links = []
 all_titles = []
 page_number = 1
